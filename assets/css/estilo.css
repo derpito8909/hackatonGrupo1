@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.carta {
+  width: 300px;
+  height: 300px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.carta-face {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 2px solid black;
+  }
+
+  .carta-face:hover {
+    bottom: 2px;
+    right: 2px;
+    box-shadow: 0px 0px 20px 1px #000;
+}
+
+.carta-face-back {
+  transform: rotateY(180deg);
+}
+
+.carta.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.boton {
+    font-size: 22px;
+    color: white !important;
+    border: 1px solid rgb(5, 82, 92);
+    background-color: rgb(51, 193, 212);
+    text-align: center;
+    width: 37%;
+    display: inline-block;
+    margin-left: 5px;    
+}
+.usuario{
+  font-size: 16px;
+  font-weight: 700;
+  margin-right: 25px;
+  color: chocolate;
+}
+.puntaje{
+font-size: 16px;
+  font-weight: 700;
+  margin-right: 25px;
+  color: crimson;
+}
