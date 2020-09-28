@@ -1,9 +1,16 @@
-const cards = document.querySelectorAll('.card');
-//console.log(cards);
+const cards = document.querySelectorAll('.carta');
+console.log(cards);
 
 function flip(event) {
-    let element = event.currentTarget;
-    element.className = ''
+    var element = event.currentTarget;
+    console.log(element);
+    if (element.className === "carta") {
+        if (element.style.transform == "rotateY(180deg)") {
+            element.style.transform = "rotateY(0deg)";
+        } else {
+            element.style.transform = "rotateY(180deg)";
+        }
+    }
 };
 
 for (let card of cards) {
