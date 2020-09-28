@@ -62,7 +62,7 @@ const guardarusuario =  (usuario)=>{
             icon: "success",
         });
         setTimeout(() => {
-            window.location = './assets/pages/Login.html';
+            window.location = 'Login.html';
         }, 2000);
     }
 
