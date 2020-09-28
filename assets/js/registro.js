@@ -45,7 +45,10 @@ const guardarusuario =  (usuario)=>{
             title: saludo,
             text: "ya estas registrado !!!",
             icon: "success",
-          });
+        });
+        setTimeout(() => {
+            window.location = './assets/pages/Login.html';
+        }, 2000);
     }else{
         listadeusuarios=JSON.parse(localStorage.getItem('usuario'))
         listadeusuarios.push(usuario)
@@ -57,7 +60,10 @@ const guardarusuario =  (usuario)=>{
             title: saludo,
             text: "ya estas registrado !!!",
             icon: "success",
-          });
+        });
+        setTimeout(() => {
+            window.location = './assets/pages/Login.html';
+        }, 2000);
     }
 
 }

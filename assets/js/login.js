@@ -66,7 +66,10 @@ const login = (correo,clave)=>{
                 title: saludo,
                 text: mensaje,
                 icon: "success",
-              });
+            });
+            setTimeout(() => {
+                window.location = 'game.html';
+            }, 2000);
         }else{
             console.log("correo o clave no coinciden")
             swal({
