@@ -58,7 +58,7 @@ const guardarusuario =  (usuario)=>{
         let saludo="Felicidades "+nombreusuario
         swal({
             title: saludo,
-            text: "ya estas registrado !!!",
+            text: "ya estas registrado !!!!",
             icon: "success",
         });
         setTimeout(() => {
